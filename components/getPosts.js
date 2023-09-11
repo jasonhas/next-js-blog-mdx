@@ -21,10 +21,10 @@ const getPostByDate = () => {
     })
 
     const sortBlogPostByDate = content.sort((a,b) => {
-        const beforeDate = DateTime.fromFormat(a.date, 'yyyy-m-d')
-        const afterDate = DateTime.fromFormat(b.date, 'yyyy-m-d')
-        // return afterDate - beforeDate
-        return beforeDate - afterDate
+ 
+        const beforeDate = DateTime.fromFormat(a.date, 'yyyy-MM-dd')
+        const afterDate = DateTime.fromFormat(b.date, 'yyyy-MM-dd')
+        return afterDate - beforeDate
     })
 
     return sortBlogPostByDate
