@@ -17,6 +17,7 @@ const getPostByDate = () => {
             date: matterResult.data.date,
             image: matterResult.data.mainImage,
             description: matterResult.data.description,
+            excerpt: matterResult.data.excerpt,
             slug: fileName.replace(".mdx", "")
         }
     })
