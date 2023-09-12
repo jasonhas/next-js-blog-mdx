@@ -15,6 +15,7 @@ const getPostByDate = () => {
         return {
             title: matterResult.data.title,
             date: matterResult.data.date,
+            image: matterResult.data.mainImage,
             description: matterResult.data.description,
             slug: fileName.replace(".mdx", "")
         }
@@ -43,6 +44,7 @@ const getAllPosts = () => {
             title: matterResult.data.title,
             date: matterResult.data.date,
             description: matterResult.data.description,
+            image: matterResult.data.mainImage,
             slug: fileName.replace(".mdx", "")
         }
     })
