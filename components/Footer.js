@@ -5,7 +5,7 @@ const Footer = () => {
 
     return (
         <>
-        <footer className='sm:fixed sm:bottom-0 w-full'>
+        <footer className='mt-auto'>
         <div className="bg-gray-50 h-1/2 w-full flex md:flex-row flex-col justify-around items-start p-20">
             <div className="p-5">
                 <ul>
