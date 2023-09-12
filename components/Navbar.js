@@ -26,10 +26,10 @@ const Navbar = () => {
                             <li className='ml-10 uppercase hover:border-b text-md cursor-pointer font-semibold'>Home</li>
                         </Link>
                         <Link href="/blog">
-                            <li className='ml-10 uppercase hover:border-b text-md cursor-pointer'>Blog</li>
+                            <li className='ml-10 uppercase hover:border-b text-md cursor-pointer font-semibold'>Blog</li>
                         </Link>
                         <Link href="/about">
-                            <li className='ml-10 uppercase hover:border-b text-md cursor-pointer'>About</li>
+                            <li className='ml-10 uppercase hover:border-b text-md cursor-pointer font-semibold'>About</li>
                         </Link>
                     </ul>
                 </div>
