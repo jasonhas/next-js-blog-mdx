@@ -20,16 +20,16 @@ const Navbar = () => {
                 <div>
                    <Link href="/"><h2 className='text-2xl font-bold'>STATIC</h2></Link>
                 </div>
-                <div className={`${poppins} hidden sm:flex`}>
+                <div className={`${poppins} hidden sm:flex mr-5`}>
                     <ul className='hidden sm:flex'>
                         <Link href="/">
-                            <li className='ml-10 uppercase hover:border-b text-lg'>Home</li>
+                            <li className='ml-10 uppercase hover:border-b text-md cursor-pointer font-semibold'>Home</li>
                         </Link>
                         <Link href="/blog">
-                            <li className='ml-10 uppercase hover:border-b text-lg'>Blog</li>
+                            <li className='ml-10 uppercase hover:border-b text-md cursor-pointer'>Blog</li>
                         </Link>
                         <Link href="/about">
-                            <li className='ml-10 uppercase hover:border-b text-lg'>About</li>
+                            <li className='ml-10 uppercase hover:border-b text-md cursor-pointer'>About</li>
                         </Link>
                     </ul>
                 </div>
