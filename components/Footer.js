@@ -1,6 +1,6 @@
 import { HeartIcon } from '@heroicons/react/24/solid';
 import {FaInstagram, FaTwitter, FaYoutube, FaLinkedin} from 'react-icons/fa'
-
+import Link from 'next/link'
 const Footer = () => {
 
     return (
@@ -22,36 +22,34 @@ const Footer = () => {
             </div>
             <div className='p-5'>
                 <ul>
-                    <p className='text-gray-800 font-bold text-2xl pb-4'>Products</p>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Stocks</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Futures & Options</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Mutual Funds</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Fixed deposits</li>
+                    <p className='text-gray-800 font-bold text-2xl pb-4'>Blog</p>
+                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Posts</li>
+                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>AI Prompts</li>
+                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Gallery</li>
+                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Videos</li>
                 </ul>
             </div>
             <div className='p-5'>
                 <ul>
-                    <p className='text-gray-800 font-bold text-2xl pb-4'>Company</p>
+                    <p className='text-gray-800 font-bold text-2xl pb-4'>Info</p>
                     <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>About</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Products</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Pricing</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Careers</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Press & Media</li>
+                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Projects</li>
+                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Tutorials</li>
+                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>The Ranch</li>
                 </ul>
             </div>
             <div className='p-5'>
                 <ul>
                     <p className='text-gray-800 font-bold text-2xl pb-4'>Support</p>
                     <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Contact</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Support Portal</li>
-                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>List of Changes</li>
+                    <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>FAQ</li>
                     <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Downloads & Resources</li>
                     <li className='text-gray-500 text-md pb-2 font-semibold hover:text-blue-600 cursor-pointer'>Videos</li>
                 </ul>
             </div>
         </div>
         <div className='flex flex-col justify-center items-center text-center p-5 bg-gray-50'>
-            <h1 className='text-gray-800 font-semibold'>&copy; 2022-2023 All rights reserved | Built with &#128420; | by Qube6</h1>
+            <h1 className='text-gray-800 font-semibold'>&copy; 2022-2023 All rights reserved | Built with &#128420; | by <Link href="https://qube6.digital" target="blank">Qube 6 Digital</Link></h1>
         </div>
         </footer>
         </>

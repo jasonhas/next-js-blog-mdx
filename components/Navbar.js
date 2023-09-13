@@ -18,7 +18,7 @@ const Navbar = () => {
         <nav className='fixed w-full h-24 bg-white'>
             <div className='flex justify-between items-center w-full h-full px-4 2xl:px-16'>
                 <div>
-                   <Link href="/"><h2 className='text-2xl font-bold'>STATIC</h2></Link>
+                   <Link href="/"><h2 className='text-2xl font-bold'>static blog</h2></Link>
                 </div>
                 <div className={`${poppins} hidden sm:flex mr-5`}>
                     <ul className='hidden sm:flex'>
