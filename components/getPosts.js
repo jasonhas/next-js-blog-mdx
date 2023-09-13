@@ -23,7 +23,6 @@ const getPostByDate = () => {
     })
 
     const sortBlogPostByDate = content.sort((a,b) => {
- 
         const beforeDate = DateTime.fromFormat(a.date, 'yyyy-MM-dd')
         const afterDate = DateTime.fromFormat(b.date, 'yyyy-MM-dd')
         return afterDate - beforeDate
@@ -32,26 +31,26 @@ const getPostByDate = () => {
     return sortBlogPostByDate
     // return content
 }
-const getAllPosts = () => {
-    const folder = "content"
-    const fileNames = fs.readdirSync(folder)
-    const markdownPosts = fileNames.filter((file) => file.endsWith(".mdx"))
+// const getAllPosts = () => {
+//     const folder = "content"
+//     const fileNames = fs.readdirSync(folder)
+//     const markdownPosts = fileNames.filter((file) => file.endsWith(".mdx"))
 
-    const content = markdownPosts.map((fileName) => {
-        const fullpath = path.join(folder,fileName)
-        const fileContents = fs.readFileSync(fullpath, "utf8")
-        const matterResult = matter(fileContents)
-        return {
-            title: matterResult.data.title,
-            date: matterResult.data.date,
-            description: matterResult.data.description,
-            image: matterResult.data.mainImage,
-            slug: fileName.replace(".mdx", "")
-        }
-    })
+//     const content = markdownPosts.map((fileName) => {
+//         const fullpath = path.join(folder,fileName)
+//         const fileContents = fs.readFileSync(fullpath, "utf8")
+//         const matterResult = matter(fileContents)
+//         return {
+//             title: matterResult.data.title,
+//             date: matterResult.data.date,
+//             description: matterResult.data.description,
+//             image: matterResult.data.mainImage,
+//             slug: fileName.replace(".mdx", "")
+//         }
+//     })
 
-    return content
-}
+//     return content
+// }
 
 // export default getAllPosts
 export default getPostByDate
