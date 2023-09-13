@@ -8,6 +8,7 @@ export default function Home() {
   const post = Post()
   const displayDate = post[0].date;
   const image = post[0].image;
+
   const dt = DateTime.fromFormat(displayDate, "yyyy-MM-dd")
   const formatted = dt.toFormat("MMMM dd, yyyy")
 
