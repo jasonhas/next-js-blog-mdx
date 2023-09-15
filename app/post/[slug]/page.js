@@ -12,7 +12,7 @@ const getPostContent = (slug) => {
     const matterResult = matter(content)
 
     return matterResult
-}
+} 
 
 
 const PostPage = ({params}) => {
@@ -20,6 +20,7 @@ const PostPage = ({params}) => {
     const post = getPostContent(slug)
     const dt = DateTime.fromFormat(post.data.date, 'yyyy-MM-dd')
     const formatted = dt.toFormat('MMMM dd, yyyy')
+
     return (
 
         <div className="flex flex-col max-w-7xl mx-auto px-5 pb-6">
